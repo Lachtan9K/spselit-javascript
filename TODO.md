@@ -1,0 +1,41 @@
+This is list of things which needs to be done. They are not in any particular order.
+
+- Pirate ship
+- small practical tasks for exercise
+- theory
+  - JS categorization
+  - variables & assignment (hoisting)
+    - let
+    - const
+    - var?
+  - data types
+  - hello world
+  - functions
+  - control flow
+    - if, else
+    - switch
+  - data structures
+    - arrays
+    - sets
+    - maps
+  - loops
+    - while
+    - for
+  - arithmetics (and their problems)
+    - precedence
+  - objects
+  - events
+  - DOM manipulation
+  - date
+  - destructuring
+  - scope
+  - class
+  - callback
+  - async
+    - promises
+    - async
+    - await
+  - modules
+  - modern JS
+- automatic testing environment
+- examples of practical usages of JS
