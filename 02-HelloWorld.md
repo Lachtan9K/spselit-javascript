@@ -22,6 +22,7 @@ To print out something from console we can use `log()` function. This one is use
 
 Other options are functions like `error()` or `warn()` but there are used specifically for informing that there is some problem.
 
+Note: It is good practice to limit what get printed out to console in production version of the app. As it may cause confusion or it can be considered security risk.
 
 ### Examples
 
