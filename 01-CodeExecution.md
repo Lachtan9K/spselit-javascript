@@ -21,6 +21,8 @@ We can run **NodeJS** from console via:
 
 which will start interactive session. To which we can write Javascript commands and engine will execute them and return their result.
 
+Note: executing commands in console may produce `undefined` or other unexpected result, that is property of command execution. As every command has to produce something in case of defining variable that something is nothing which will produce that `undefined` text.
+
 ### Web browser
 
 Same way as with NodeJS we can use browser to execute Javascript commands and get their result. This is done by using **console** in **developer options**.
