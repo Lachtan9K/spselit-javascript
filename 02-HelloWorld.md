@@ -41,3 +41,16 @@ Every project has defined which style of quotes is using if either single or dou
 Note: Nearly all projects are using some kind of static analyzer (for example [ESlint](https://eslint.org/)) which has configuration which quotes are accepted.
 
 School: In school we have installed [Prettier](https://prettier.io/) VS code extension which in default configuration accepts double quotes.
+
+## Semicolon at end
+
+Semicolons for Javascript are optional as Javascript is using
+ASI (Automatic Semicolon Insertion) this mechanic will insert them (not physically) when code is parsed, before being executed.
+
+Ruleset defining when semicolons are automatically inserted does not cover all possible code constructions and semicolons in some places need to be put in manually to produce valid code or it may lead to unexpected behavior.
+
+Note: Same as with single/double quotes projects have rules which option is used. Also this is quite discussed topic on internet and developers are quite opinionated about it.
+
+Personal: So am I! In all my personal projects and these that I technically lead I require use of semicolons. As it feel easier to read.
+
+School: In school usage of semicolons is required!
