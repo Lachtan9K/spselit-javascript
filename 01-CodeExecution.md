@@ -2,7 +2,7 @@
 
 This document is introduction to how we can write and execute code.
 
-In the end we want to have script files as part of website. But for learning reasons we can try other options how to execute code we will write later.
+In the end we want to have script files as part of website. But for learning purposes we can try other options how to execute code. Properly including it in website will be topic for later.
 
 ## Contents
 
@@ -39,7 +39,7 @@ For example if we have file named `app.js` then we can execute it via command:
 
 which will start NodeJS execute given script and exits NodeJS.
 
-For learning reasons we will be using this technique from start and then switching to web browser one when we will have a need to manipulate a website.
+For learning reasons we will be using this technique from start. Later we will switch to web browser as we will be manipulating a website.
 
 ### Web browser
 
