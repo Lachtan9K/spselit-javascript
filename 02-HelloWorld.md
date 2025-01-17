@@ -16,11 +16,12 @@ Note: Other languages may also have a default input. For example in C++ console 
 
 ## Console
 
-Console is accessible through all scripts via `Console` and can be used to print out text or text value of variables.
+Console is accessible through all scripts via `console` and can be used to print out text or text value of variables.
 
-To print out something from console we can use `log` function. This one is used most of the time.
+To print out something from console we can use `log()` function. This one is used most of the time.
 
-Other options are functions like `error` or `warn` but there are used specifically for informing that there is some problem.
+Other options are functions like `error()` or `warn()` but there are used specifically for informing that there is some problem.
+
 
 ### Examples
 
