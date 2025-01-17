@@ -34,9 +34,11 @@ console.log("Information 1", "Information 2");
 
 ## String
 
-Simple string as a text of variable length can be written in Javascript in two ways either via `''` (single quotes) looking like `Hey it is me ...` or `""` (double quotes) looking like `"Hey it is me ..."`. They have same meaning and function and both are valid.
+Simple string as a text of variable length can be written in Javascript in two main ways either via `''` (single quotes) looking like `Hey it is me ...` or `""` (double quotes) looking like `"Hey it is me ..."`. They have same meaning and function and both are valid.
 
 Every project has defined which style of quotes is using if either single or double - it does not matter which just don't mix them.
+
+Later we will get to know another ways how to define strings but for starter this is enough.
 
 Note: Nearly all projects are using some kind of static analyzer (for example [ESlint](https://eslint.org/)) which has configuration which quotes are accepted.
 
