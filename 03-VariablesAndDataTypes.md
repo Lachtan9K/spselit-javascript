@@ -71,3 +71,34 @@ And supports variable hoisting (can be instantiated after being assigned).
 School: In school we will not be using this one.
 
 ## Variable scopes
+
+Code is separated to blocks (scopes) in which variables are available. Variables are provided to inner scopes but not outer.
+
+This is done for a reason to not pollute space with variables as their names would clash and there is no need to have variables available indefinitely as it would eat too much of memory.
+
+Scopes are:
+
+- script
+- class
+- function
+- `{ }` block
+
+For now this is just information to keep in mind. Later in course we may return to this topic once again and look to it's implications.
+
+### Example
+
+```
+let outer = "outer";
+console.log(outer);
+
+{
+  let inner = "test";
+  console.log(outer);
+  console.log(inner);
+}
+
+console.log(outer);
+console.log(inner); //error as innerTest is not available
+```
+
+## Data Types
