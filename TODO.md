@@ -8,6 +8,7 @@ This is list of things which needs to be done. They are not in any particular or
   - control flow
     - if, else
     - switch
+    - combine with comparison operators
   - data structures
     - arrays
     - sets
