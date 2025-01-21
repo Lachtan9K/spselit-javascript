@@ -3,13 +3,7 @@ This is list of things which needs to be done. They are not in any particular or
 - Pirate ship
 - small practical tasks for exercise
 - theory
-  - JS categorization
-  - variables & assignment (hoisting)
-    - let
-    - const
-    - var?
-  - data types
-  - hello world
+  - hoisting
   - functions
   - control flow
     - if, else
@@ -28,7 +22,6 @@ This is list of things which needs to be done. They are not in any particular or
   - DOM manipulation
   - date
   - destructuring
-  - scope
   - class
   - callback
   - async
