@@ -44,19 +44,25 @@ Variable names should be descriptive. Single `a` in 200 lines of script is not a
 
 Note: Descriptive variable names make code more readable and it will be easier to understand in shorter time. Which makes you more productive then having to guess what is going on.
 
+## Variable access types
+
+Javascript uses 3 access types `let` `const` and `var`. These access types define how can be variable accessed and if it can be overwritten when set and it's scope-ness.
+
+### Let
+
 `let` is access type which allows overwriting of value.
 
 Can be instantiated without being assigned and it will automatically have `undefined` value.
 
-#### Const
+### Const
 
 `const` does not allows data overwriting.
 
 Has to be assign when instantiated.
 
-#### Var
+### Var
 
-`var` is older type and it is not recommend to be used.
+`var` is older type and it is not recommend to be used. Only reasonable usage is to support older browsers.
 
 It is registered on global scope (on it later).
 
@@ -64,4 +70,4 @@ And supports variable hoisting (can be instantiated after being assigned).
 
 School: In school we will not be using this one.
 
-### Variable scopes
+## Variable scopes
