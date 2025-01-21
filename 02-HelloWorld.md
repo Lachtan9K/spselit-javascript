@@ -56,3 +56,20 @@ Note: Same as with single/double quotes projects have rules which option is used
 Personal: So am I! In all my personal projects and these that I technically lead I require use of semicolons. As it feel easier to read.
 
 School: In school usage of semicolons is required!
+
+## Comments
+
+Javascript as many other languages allows comments in source code. Two styles are allowed single line and multiline.
+
+### Single line comments
+
+    // This is a comment
+
+### Multiline
+
+```
+/*
+This is multiline comment
+And this is second line in multiline comment - obviously
+*/
+```
