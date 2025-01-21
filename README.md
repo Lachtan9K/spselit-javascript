@@ -9,3 +9,10 @@ This repository was created as part of project between [Dice-Sensei](https://git
 ## Usage
 
 Learning resources will be structured as needed by teaching requirements, best place to start is from zero (**00-\*.md**).
+
+## Course content
+
+- Introduction of Javascript
+- How to execute code
+- Hello world!
+- Math time
