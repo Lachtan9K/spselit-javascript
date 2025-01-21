@@ -102,3 +102,92 @@ console.log(inner); //error as innerTest is not available
 ```
 
 ## Data Types
+
+Javascript has few data types which are used regularly: `string`, `number`, `boolean`, `undefined`, `object`, `null`.
+
+And other ones which are not: `Bigint`, `Symbol`.
+
+### string
+
+This is just normal text.
+
+#### Examples
+
+    let myName = "Dice Sensei";
+    const bestSchool = "SPŠ el-it";
+    const color = 'Green';
+
+### number
+
+Javascript in difference to other programming languages it has only one number type `64-bit floating point`.
+
+Decimal numbers are written with `.`.
+
+#### Examples
+
+    let age = 29;
+    const pie = 3.1415;
+
+### boolean
+
+Boolean has only two possible values/states `true` or `false`.
+
+#### Examples
+
+    const feelingHungry = true;
+    let finishedWithWork = false;
+
+### undefined
+
+Special ty which defines that nothing is assigned to variable.
+
+#### Examples
+
+    let nothing;
+    nothing = undefined;
+
+### object
+
+Object types is for complex data. They can be of two types **build-in** or **user defined**.
+
+Build-in: `objects`, `arrays`, `dates`, `maps`, `sets`, `promises`, and more.
+
+To objects we will get later as they are more complex.
+
+### null
+
+Special type for objects which defines that object is set to nothing. Meaning that pointer to object is not set, not variable itself.
+
+Note: `typeof` for null is returning object instead.
+
+#### Examples
+
+    let car = null;
+    let bestObjectEver = null;
+
+## Changing Data Type at Runtime
+
+Javascript is allowing to change data type of defined variable. For example we can write:
+
+    let pie = 3.1415; //this is number
+    pie = "Yumy!" //this is string
+
+This is valid syntax and runtime execution.
+
+Note: Changing data type can cause confusion, makes code less readable and may lead to errors.
+
+School: In school let's not do this!
+
+## Data types checking
+
+We can check for data type of property via `typeof`.
+
+### Example
+
+    let pie = 3.1415;
+    console.log(typeof pie); //this will return number
+
+    let myName = "Dice Sensei";
+    console.log(typeof myName); //this will return string
+
+    console.log(typeof undefined); //this will return undefined
