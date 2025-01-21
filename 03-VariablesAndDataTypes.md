@@ -18,7 +18,7 @@ This will create new empty variable with name `myName`. This is instantiation. T
 
 we will get `undefined` which literally means that value for this variable was not defined.
 
-Now we can assign some value to it. For example name via:
+Now we can assign some value to it. For example name, via:
 
     myName = "Dice Sensei";
 
@@ -26,13 +26,23 @@ this will put string `Dice Sensei` inside this variable. This is assignment. We 
 
     console.log(myName);
 
-now it will print out it's value.
+now it will print out it's value, in this example `DiceSensei`.
 
-### Variable access types
+## Variable names
 
-Javascript uses 3 access types `let` `const` and `var`. These access types define how can be variable accessed and if it can be overwritten when set.
+Javascript allows using **letters**, **digits**, **underscore** in names.
 
-#### Let
+Name has to **start with letter**.
+
+Names are **case sensitive**.
+
+It is common to use [**(lower) camel case**](https://en.wikipedia.org/wiki/Camel_case) for naming variables in Javascript.
+
+Names can't be same as **reserved words** (language keywords).
+
+Variable names should be descriptive. Single `a` in 200 lines of script is not a good name for variable better would be `numberOfTries`.
+
+Note: Descriptive variable names make code more readable and it will be easier to understand in shorter time. Which makes you more productive then having to guess what is going on.
 
 `let` is access type which allows overwriting of value.
 
