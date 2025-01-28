@@ -139,6 +139,14 @@ Decimal numbers are written with `.`.
     let age = 29;
     const pie = 3.1415;
 
+#### Conversion from string to number
+
+In case we have a string which contains number (in decimal system) we can easily convert it by using function Number:
+
+    let ten = Number("10"); //10
+
+More on this later.
+
 ### boolean
 
 Boolean has only two possible values/states `true` or `false`.
