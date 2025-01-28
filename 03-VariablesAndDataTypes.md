@@ -40,6 +40,8 @@ It is common to use [**(lower) camel case**](https://en.wikipedia.org/wiki/Camel
 
 Names can't be same as **reserved words** (language keywords).
 
+There can't be two variable with same in same scope.
+
 Variable names should be descriptive. Single `a` in 200 lines of script is not a good name for variable better would be `numberOfTries`.
 
 Note: Descriptive variable names make code more readable and it will be easier to understand in shorter time. Which makes you more productive then having to guess what is going on.
