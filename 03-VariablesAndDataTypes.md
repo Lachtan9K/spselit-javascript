@@ -109,13 +109,22 @@ And other ones which are not: `Bigint`, `Symbol`.
 
 ### string
 
-This is just normal text.
+This is just normal text of variable length and can be written either by using `''` (single quotes) looking like `Hey it is me ...` or by using `""` (double quotes) looking like `"Hey it is me ..."`.
+
+Every project has defined which style of quotes is using if either single or double - it does not matter which just don't mix them.
+
+In case we need to wite sentence which contains `'` or `"` same symbol as we used to write it. We will need to use `\` (backslash) to counter the internal symbols or it will generate error.
+
+Note: Nearly all projects are using some kind of static analyzer (for example [ESlint](https://eslint.org/)) which has configuration which quotes are accepted.
+
+School: In school we have installed [Prettier](https://prettier.io/) VS code extension which in default configuration accepts double quotes.
 
 #### Examples
 
     let myName = "Dice Sensei";
     const bestSchool = "SPŠ el-it";
     const color = 'Green';
+    const quotedText = "This is \"quoted\" text."
 
 ### number
 
