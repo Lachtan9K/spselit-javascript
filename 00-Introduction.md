@@ -29,8 +29,12 @@ as Javascript is using **JIT** ([just-in-time compilation](https://en.wikipedia.
 
 Javascript is weakly typed system. And there is no static or runtime type checking. That means that system allows code such as:
 
-    let x = 42 - "13"; //29
+    let x = 42 - "13"; // 29
 
 and it is valid syntax and runtime execution.
 
-TODO: **duck typing**.
+### Duck typing
+
+Javascript is passing so called [Duck test](https://en.wikipedia.org/wiki/Duck_test) - "If it walks like a duck and it quacks like a duck, then it must be a duck" - this means that object can be used as give type if it is not that type as long as it has all properties and functions as that type.
+
+Note: This allows way more freedom when working with objects but also removes safe net when working with given type as unrelated object may by pure chance pass as correct type. More on this later.
