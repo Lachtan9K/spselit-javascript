@@ -88,7 +88,11 @@ Note: In practice when data get converted from complex data structures such as J
 
 `!=` is equal (different data types)
 
-Note: Comparison is not recommended between different data types as it may lead to unexpected behavior.
+[Equality Table](https://dorey.github.io/JavaScript-Equality-Table/unified/) - for all possible data types.
+
+Note: Comparison is not recommended between different data types as it may lead to unexpected behavior. In practice many static analyzers are warning about this.
+
+School: In school we will try not to use comparison between different data types.
 
 #### Examples
 
