@@ -27,6 +27,7 @@ Note: It is good practice to limit what get printed out to console in production
 ### Examples
 
 ```
+// direct / script execution
 console.log("Hello world!");
 console.log("Now it is my time to shine!");
 console.log("Information 1", "Information 2");

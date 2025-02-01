@@ -22,11 +22,12 @@ Addition ones are:
 
 #### Examples
 
-    let x = 40 + 2; //42
-    let y = 44 - 2; //42
-    let z = 21 * 2; //42
-    let q = 84 / 2; //42
-    let r = 5 % 2; //1
+    //command execution
+    40 + 2; //42
+    44 - 2; //42
+    21 * 2; //42
+    84 / 2; //42
+    5 % 2; //1
 
 ### Unary
 
@@ -38,8 +39,10 @@ Need only one operator.
 
 #### Examples
 
-    x++ //43
-    x-- //42
+    //command / script execution
+    let x = 42;
+    x++; //43
+    x--; //42
 
 ## Arithmetic Operator Shortcuts
 
@@ -49,6 +52,7 @@ Syntax for shortcut is that operator is put before `=` (equals).
 
 ### Examples
 
+    //command / script execution
     let x = 40;
     x += 2; //40
 
@@ -60,8 +64,9 @@ Precedence can be changed by using parentheses.
 
 ### Examples
 
-    let x = 100 + 50 * 3; //250
-    let y = (100 + 50) * 3; //450
+    //command execution
+    100 + 50 * 3; //250
+    (100 + 50) * 3; //450
 
 ## Data type arithmetics warning
 
@@ -71,6 +76,7 @@ Note: In practice when data get converted from complex data structures such as J
 
 ### Examples
 
+    //command / script execution
     let five = 5;
     let one = "1";
     let four = five - one; //this is really digit four
@@ -96,9 +102,11 @@ School: In school we will try not to use comparison between different data types
 
 #### Examples
 
-    let yes = 1 === 1; //true
-    let no = 1 === 5; //false
-    let nope = 1 == "42"; //false
+    //command execution
+    1 === 1; //true
+    1 === 5; //false
+    1 == "42"; //false
+    1 == "1"; //true
 
 ### Others
 
@@ -112,5 +120,6 @@ School: In school we will try not to use comparison between different data types
 
 #### Examples
 
-    let myBig = 42 > 20; //true
-    const inHour = 75 <= 60; //false
+    //command execution
+    42 > 20; //true
+    75 <= 60; //false

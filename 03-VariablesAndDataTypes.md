@@ -10,6 +10,7 @@ Variable are containers (boxes) which may contain the value.
 
 We can define such container via:
 
+    //command / script execution
     let myName;
 
 This will create new empty variable with name `myName`. This is instantiation. This variable is empty if we try to print it out via:
@@ -90,6 +91,8 @@ For now this is just information to keep in mind. Later in course we may return 
 ### Example
 
 ```
+//script execution
+
 let outer = "outer";
 console.log(outer);
 
@@ -123,6 +126,7 @@ School: In school we have installed [Prettier](https://prettier.io/) VS code ext
 
 #### Examples
 
+    //command / script execution
     let myName = "Dice Sensei";
     const bestSchool = "SPŠ el-it";
     const color = 'Green';
@@ -136,6 +140,7 @@ Decimal numbers are written with `.`.
 
 #### Examples
 
+    //command / script execution
     let age = 29;
     const pie = 3.1415;
 
@@ -153,6 +158,7 @@ Boolean has only two possible values/states `true` or `false`.
 
 #### Examples
 
+    //command / script execution
     const feelingHungry = true;
     let finishedWithWork = false;
 
@@ -162,6 +168,7 @@ Special ty which defines that nothing is assigned to variable.
 
 #### Examples
 
+    //command / script execution
     let nothing;
     nothing = undefined;
 
@@ -181,6 +188,7 @@ Note: `typeof` for null is returning object instead.
 
 #### Examples
 
+    //command / script execution
     let car = null;
     let bestObjectEver = null;
 
@@ -188,6 +196,7 @@ Note: `typeof` for null is returning object instead.
 
 Javascript is allowing to change data type of defined variable. For example we can write:
 
+    //command / script execution
     let pie = 3.1415; //this is number
     pie = "Yumy!" //this is string
 
@@ -203,6 +212,7 @@ We can check for data type of property via `typeof`.
 
 ### Example
 
+    //command / script execution
     let pie = 3.1415;
     console.log(typeof pie); //this will return number
 
