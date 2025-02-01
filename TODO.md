@@ -8,7 +8,6 @@ This is list of things which needs to be done. They are not in any particular or
   - control flow
     - if, else
     - switch
-    - combine with comparison operators
   - data structures
     - arrays
     - sets
@@ -16,9 +15,8 @@ This is list of things which needs to be done. They are not in any particular or
   - loops
     - while
     - for
-  - arithmetics (and their problems)
-    - precedence
   - objects
+  - string manipulation
   - events
   - DOM manipulation
   - date
@@ -31,5 +29,8 @@ This is list of things which needs to be done. They are not in any particular or
     - await
   - modules
   - modern JS
+  - saving data in browser (local, session)
+  - using 3rd party packages (validation?, axios)
+  - communicating with 3rd party API in browser
 - automatic testing environment
 - examples of practical usages of JS
