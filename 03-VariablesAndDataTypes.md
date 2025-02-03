@@ -234,3 +234,17 @@ We can check for data type of property via `typeof`.
     console.log(typeof myName); //this will return string
 
     console.log(typeof undefined); //this will return undefined
+
+## What happens when variable does not exists?
+
+In case that variable does not exists when being read or manipulated by the engine, the engine will throw `ReferenceError`.
+
+[ReferenceError documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/ReferenceError).
+
+### Example
+
+    //command / script execution
+    console.log(nothing);
+    Uncaught ReferenceError: nothing is not defined
+
+Note: Some engines will create a variable when it does not exists and it is being assigned.
