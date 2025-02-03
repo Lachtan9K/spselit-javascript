@@ -124,6 +124,8 @@ Note: Nearly all projects are using some kind of static analyzer (for example [E
 
 School: In school we have installed [Prettier](https://prettier.io/) VS code extension which in default configuration accepts double quotes.
 
+[String documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
+
 #### Examples
 
     //command / script execution
@@ -137,6 +139,8 @@ School: In school we have installed [Prettier](https://prettier.io/) VS code ext
 Javascript in difference to other programming languages it has only one number type `64-bit floating point`.
 
 Decimal numbers are written with `.`.
+
+[Number documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
 
 #### Examples
 
@@ -156,6 +160,8 @@ More on this later.
 
 Boolean has only two possible values/states `true` or `false`.
 
+[Boolean documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Boolean)
+
 #### Examples
 
     //command / script execution
@@ -166,6 +172,8 @@ Boolean has only two possible values/states `true` or `false`.
 
 Special ty which defines that nothing is assigned to variable.
 
+[Undefined documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
+
 #### Examples
 
     //command / script execution
@@ -173,6 +181,8 @@ Special ty which defines that nothing is assigned to variable.
     nothing = undefined;
 
 ### object
+
+[Object documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
 
 Object types is for complex data. They can be of two types **build-in** or **user defined**.
 
@@ -183,6 +193,8 @@ To objects we will get later as they are more complex.
 ### null
 
 Special type for objects which defines that object is set to nothing. Meaning that pointer to object is not set, not variable itself.
+
+[Null documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/null)
 
 Note: `typeof` for null is returning object instead.
 
@@ -209,6 +221,8 @@ School: In school let's not do this!
 ## Data types checking
 
 We can check for data type of property via `typeof`.
+
+[Typeof documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/typeof)
 
 ### Example
 
