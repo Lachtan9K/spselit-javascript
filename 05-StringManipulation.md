@@ -83,6 +83,26 @@ To find out if string includes string or character there is function `.includes(
     const lookupWord = "lazy";
     console.log(`Does sentence "${sentence}" contains "${lookupWord}"? Answer is: "${sentence.includes(lookupWord)}" `);
 
+### Index
+
+Strings in Javascript are indexed which means we can access any value from them if we know it's index. Javascript is using standard counting from **zero**.
+
+For example if we want to get first character from string we can use:
+
+    //command / script execution
+    const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; //may already be used
+    console.log(alphabet[0]); //A
+
+this will return an `A` character.
+
+For getting last character in string we can use `.length` property and subtract 1 - because counting stars from 0.
+
+    //command / script execution
+    const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; //may already be used
+    console.log(alphabet[alphabet.length - 1]); //Z
+
+Note: This may look like indexing an array and it works on same principle.
+
 ### Substring
 
 ### Case
