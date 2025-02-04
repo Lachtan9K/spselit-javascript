@@ -64,7 +64,7 @@ Ishigami Fuujin`;
 
 Javascript have many ready made functions which can be used to manipulate strings.
 
-Note: Also there is quite few 3rd party packages which offers many more functions.
+Note: Also there is quite few 3rd party packages which offers many more functions. Most popular is [Lodash](https://lodash.com/) (it does not include only string functions).
 
 ### Length
 
