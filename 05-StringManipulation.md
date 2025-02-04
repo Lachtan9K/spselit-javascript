@@ -19,7 +19,7 @@ Note: This does not insert spaces between string so you need to do yourself.
 
 ## String Template
 
-In Javascript we can defined template string with `` (back ticks) which will allow to define string containing single quotes or double quotes inside or other symbols like new line.
+In Javascript we can defined template string with ` `` ` (back ticks) which will allow to define string containing single quotes or double quotes inside or other symbols like new line.
 
 So you can write for example:
 
