@@ -14,8 +14,9 @@ In Javascript we can concatenate string with `+` (plus symbol) which will put th
 
     //command / script execution
     let con = "My name is " + "Dice Sensei"; //My name is Dice Sensei
+    console.log(con);
 
-Note: This does not insert spaces between string so you need to do yourself.
+Note: This does not insert spaces between string so you need to do it yourself.
 
 ## String Template
 
