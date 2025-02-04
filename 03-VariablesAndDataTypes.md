@@ -13,13 +13,13 @@ We can define such container via:
     //command / script execution
     let myName;
 
-This will create new empty variable with name `myName`. This is instantiation. This variable is empty if we try to print it out via:
+This will create new empty variable in memory with name `myName`. This is **instantiation**. This variable is empty if we try to print it out via:
 
     console.log(myName);
 
-we will get `undefined` which literally means that value for this variable was not defined.
+we will get `undefined` which literally means that value for this variable was not defined (nothing was put inside of it).
 
-Now we can assign some value to it. For example name, via:
+Now we can **assign** some value to it. For example name, via:
 
     myName = "Dice Sensei";
 
@@ -27,7 +27,7 @@ this will put string `Dice Sensei` inside this variable. This is assignment. We 
 
     console.log(myName);
 
-now it will print out it's value, in this example `DiceSensei`.
+now it will print out it's value, in this example `Dice Sensei`.
 
 ## Variable names
 
@@ -47,6 +47,8 @@ Variable names should be descriptive. Single `a` in 200 lines of script is not a
 
 Note: Descriptive variable names make code more readable and it will be easier to understand in shorter time. Which makes you more productive then having to guess what is going on.
 
+Note: Other values may be used in names too, but they may have special meaning like starting with underscores, for that reason it is better not to use them.
+
 ## Variable access types
 
 Javascript uses 3 access types `let` `const` and `var`. These access types define how can be variable accessed and if it can be overwritten when set and it's scope-ness.
@@ -55,21 +57,21 @@ Javascript uses 3 access types `let` `const` and `var`. These access types defin
 
 `let` is access type which allows overwriting of value.
 
-Can be instantiated without being assigned and it will automatically have `undefined` value.
+Can be **instantiated** without being **assigned** and it will automatically have `undefined` value.
 
 ### Const
 
-`const` does not allows data overwriting.
+`const` does not allows data overwriting (changing their value).
 
-Has to be assign when instantiated.
+Has to be **assigned** when **instantiated**.
 
 ### Var
 
-`var` is older type and it is not recommend to be used. Only reasonable usage is to support older browsers.
+`var` is older type and it is not recommend to be used. Only reasonable usage is to support older browsers (Internet Explorer).
 
-It is registered on global scope (on it later).
+It is registered on global scope (on it later) which may lead to variable name clashes.
 
-And supports variable hoisting (can be instantiated after being assigned).
+And supports variable **hoisting** (can be instantiated after being assigned, respectively it is instantiated automatically).
 
 School: In school we will not be using this one.
 
@@ -118,7 +120,7 @@ This is just a normal text of variable length and can be written either by using
 
 Every project has defined which style of quotes is using if either single or double - it does not matter which just don't mix them.
 
-In case we need to wite sentence which contains `'` or `"` same symbol as we used to write it. We will need to use `\` (backslash) to counter the internal symbols or it will generate error.
+In case we need to wite sentence which contains `'` or `"` same symbol as we used to write it. We will need to use `\` (backslash) to counter the internal symbols or it will generate error. Other option is **String templates** (on this later).
 
 Note: Nearly all projects are using some kind of static analyzer (for example [ESlint](https://eslint.org/)) which has configuration which quotes are accepted.
 
@@ -138,7 +140,7 @@ School: In school we have installed [Prettier](https://prettier.io/) VS code ext
 
 Javascript in difference to other programming languages it has only one number type `64-bit floating point`.
 
-Decimal numbers are written with `.`.
+Decimal numbers are written with `.` (dot) when programming.
 
 [Number documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Number)
 
@@ -170,7 +172,7 @@ Boolean has only two possible values/states `true` or `false`.
 
 ### undefined
 
-Special ty which defines that nothing is assigned to variable.
+Special type which defines that nothing is assigned to variable.
 
 [Undefined documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/undefined)
 
@@ -186,7 +188,7 @@ Special ty which defines that nothing is assigned to variable.
 
 Object types is for complex data. They can be of two types **build-in** or **user defined**.
 
-Build-in: `objects`, `arrays`, `dates`, `maps`, `sets`, `promises`, and more.
+Build-in: `objects`, `arrays`, `dates`, `maps`, `sets`, `promises` and more.
 
 To objects we will get later as they are more complex.
 
