@@ -105,4 +105,13 @@ Note: This may look like indexing an array and it works on same principle.
 
 ### Substring
 
+To get substring from string we can use `.slice()` function which takes two variables, start index and end index. Last one is optional and without it function will return data till end of the string.
+
+    //command / script execution
+    const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"; //may already be used
+    console.log(alphabet.slice(3, 8)); //DEFGH
+    console.log(alphabet.slice(5)); //FGHIJKLMNOPQRSTUVWXYZ
+    console.log(alphabet.slice(8, 3)); //???
+    console.log(alphabet.slice(30)); //???
+
 ### Case
