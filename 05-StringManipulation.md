@@ -114,4 +114,11 @@ To get substring from string we can use `.slice()` function which takes two vari
     console.log(alphabet.slice(8, 3)); //???
     console.log(alphabet.slice(30)); //???
 
-### Case
+### Case manipulation
+
+To manipulate case of string in Javascript there are prepared functions `.toLowerCase` and `.toUpperCase` they will turn all chars in string to lower case or upper case respectively.
+
+    //command / script execution
+    const brokenSentence = "IT wOulD NOt kILl YOu tO lIstEn tO ME fOR a bIt...";
+    console.log(brokenSentence.toLowerCase());
+    console.log(brokenSentence.toUpperCase());
