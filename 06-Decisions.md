@@ -69,6 +69,93 @@ Note: It is good practice to always include `else` block for daisy chaining so w
 
 ## AND, OR, NOT
 
+Of course we can use more than one condition inside of `if`. We can join these conditions by using **AND** or **OR** and we can negate it by using **NOT**.
+
+But these don't have to be used only in conditions. But that is place where these are used mostly.
+
+### AND
+
+Joining conditions via **AND** written as `&&` (2x ampersand) means that **all** parts needs to be evaluated to `true` for condition to be `true`. Otherwise it is evaluated as `false`.
+
+    //script execution
+
+    //Can I ride the rollercoaster?
+    const minAge = 12;
+    const minHeight = 140;
+
+    let height = 120;
+    let age = 15;
+
+    if (height >= minHeight && age >= minAge) {
+        console.log("You can ride the rollercoaster!");
+    } else {
+        console.log("Sorry, you can't ride the rollercoaster");
+    }
+
+Of course it is possible to join more then two conditions.
+
+### OR
+
+Joining conditions via **OR** written as `||` (2x pipe) means that **at least one** part needs to be evaluated to `true` for condition to be `true`. Otherwise it is evaluated as `false`.
+
+    //script execution
+
+    //Do we have a beer at home?
+    let beerInsideFridge = true;
+    let beerInsideCupboard = true;
+    let beerInsideBasement = true;
+
+    if (beerInsideFridge || beerInsideCupboard || beerInsideBasement) {
+        console.log("We have some beer at home!");
+    } else {
+        console.log("Time to go shopping!");
+    }
+
+### NOT
+
+**NOT** can be used to reverse **boolean** value or condition and it is written as `!` (exclamation mark).
+
+    //script execution
+
+    //Light switch
+    let lightSwitchIsOn = false;
+
+    console.log("Light is on: " + lightSwitchIsOn);
+
+    //Toggle the light switch
+    lightSwitchIsOn = !lightSwitchIsOn;
+
+    console.log("Light is on: " + lightSwitchIsOn);
+
+    //Toggle the light switch
+    lightSwitchIsOn = !lightSwitchIsOn;
+
+    console.log("Light is on: " + lightSwitchIsOn);
+
+It is mostly beneficial in shortening `if` statements. We can rewrite:
+
+    //script execution
+
+    //Can I sleep longer?
+    const haveToGoToWork = true;
+
+    if (haveToGoToWork) {
+        //wake up...
+    } else {
+        console.log("I can sleep longer!");
+    }
+
+To simpler code:
+
+    //script execution
+
+    //Can I sleep longer?
+    const haveToGoToWork = true;
+
+    if (!haveToGoToWork) {
+        console.log("I can sleep longer!");
+    }
+
 ## Switch
 
 ## Ternary operator
