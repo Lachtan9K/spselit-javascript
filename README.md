@@ -10,6 +10,10 @@ This repository was created as part of project between [Dice-Sensei](https://git
 
 Learning resources will be structured as needed by teaching requirements, best place to start is from zero (**00-\*.md**).
 
+### Repetition is the key
+
+There is folder `Repetition` which contains one file per school class which contains practical exercise of what was lectured.
+
 ## Course content
 
 - Introduction of Javascript
