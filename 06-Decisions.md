@@ -63,6 +63,8 @@ And for more complicated decisions we can even daisy chain `if else` statements.
 
 Here we are using `else if` condition which is basically `else` block which contains new `if` statement.
 
+Order of statements matter! When condition is evaluated to `true` no other block will be checked.
+
 Note: Daisy chaining is powerful but with many blocks it can get hard to read and maintain. I would recommend not using it for more then 5 blocks.
 
 Note: It is good practice to always include `else` block for daisy chaining so we have certainty that execution just did not fall through. In example above we are using the `else` block for catching case when we can't buy fireworks.
