@@ -34,6 +34,8 @@ Same way as with NodeJS we can use browser to execute Javascript commands and ge
 
 In this way we will use **whole script file** to have it executed by Javascript engine not just single commands.
 
+Scripts are executed line by line from top. Of course if there are definitions of functions they will be executed only when called.
+
 There is no return from script execution so if something needs to be printed out it has to be through function.
 
 ### NodeJS
