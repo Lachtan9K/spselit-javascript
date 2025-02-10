@@ -20,3 +20,5 @@ There is folder `Repetition` which contains one file per school class which cont
 - How to execute code
 - Hello world!
 - Math time
+- String manipulation
+- Making decisions
