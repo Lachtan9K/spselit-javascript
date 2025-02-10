@@ -5,9 +5,6 @@ This is list of things which needs to be done. They are not in any particular or
 - theory
   - hoisting
   - functions
-  - control flow
-    - if, else
-    - switch
   - data structures
     - arrays
     - sets
@@ -16,7 +13,6 @@ This is list of things which needs to be done. They are not in any particular or
     - while
     - for
   - objects
-  - string manipulation
   - events
   - DOM manipulation
   - date
@@ -27,6 +23,7 @@ This is list of things which needs to be done. They are not in any particular or
     - promises
     - async
     - await
+  - try-catch
   - modules
   - modern JS
   - saving data in browser (local, session)
