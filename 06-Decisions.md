@@ -160,6 +160,40 @@ To simpler code:
 
 ## Switch
 
+A `switch` statements allows to evaluated an expression and then match it against `case` labels. When match is found engine will execute associated block with that label, till it finds `return` or `break` statement, this allows for **case fallthrough**.
+
+    //script execution
+
+    //Asian grading scale
+    let grade = "B";
+
+    switch (grade) {
+        case "A":
+            console.log("Average");
+            break;
+        case "B":
+            console.log("Bellow Average");
+            break;
+        case "C":
+            console.log("Can't eat dinner");
+            break;
+        case "D":
+            console.log("Don't come home");
+            break;
+        case "F":
+            console.log("Find a new family");
+            break;
+        default:
+            console.log("Invalid grade");
+            break;
+    }
+
+In example above we also have a `default` label which catches case when no label is matched for evaluated expression.
+
+Note: It is good practice to always include `default` block so we have certainty that execution was not skipped because no label was matched.
+
+Note: **Case fallthrough** is powerful tool but it can lead to unexpected behavior. And it is not recommended and many static generators warn against it.
+
 ## Ternary operator
 
 In **Javascript** there is ternary operator (ternary means it has three required parts) which is written via `?` (question mark) `:` (colon). Specifically `condition ? action_on_true : action_on_false` which will base on **condition** evaluation executes one of two actions. In case that evaluation is `true` action between `?` and `:` will be executed. Otherwise action after `:` will be executed.
