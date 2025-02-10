@@ -113,7 +113,7 @@ Joining conditions via **OR** written as `||` (2x pipe) means that **at least on
 
 ### NOT
 
-**NOT** can be used to reverse **boolean** value or condition and it is written as `!` (exclamation mark).
+**NOT** is unary operator which can be used to reverse **boolean** value or condition and it is written as `!` (exclamation mark).
 
     //script execution
 
@@ -159,3 +159,12 @@ To simpler code:
 ## Switch
 
 ## Ternary operator
+
+In **Javascript** there is ternary operator (ternary means it has three required parts) which is written via `?` (question mark) `:` (colon). Specifically `condition ? action_on_true : action_on_false` which will base on **condition** evaluation executes one of two actions. In case that evaluation is `true` action between `?` and `:` will be executed. Otherwise action after `:` will be executed.
+
+    //script execution
+
+    //How was lunch?
+    let delicious = false;
+
+    console.log("How was lunch?", delicious ? "Delicious!" : "Barely edible!");
