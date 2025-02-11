@@ -116,7 +116,7 @@ And other ones which are not: `Bigint`, `Symbol`.
 
 ### string
 
-This is just a normal text of variable length and can be written either by using `''` (single quotes) looking like `Hey it is me ...` or by using `""` (double quotes) looking like `"Hey it is me ..."`.
+This is just a normal text of variable length and can be written either by using `''` (single quotes) looking like `'Hey it is me ...'` or by using `""` (double quotes) looking like `"Hey it is me ..."`.
 
 Every project has defined which style of quotes is using if either single or double - it does not matter which just don't mix them.
 

@@ -6,7 +6,7 @@ String manipulation is pretty common task in web development.
 
 ## Declaring String
 
-As already mentioned string is: just a normal text of variable length and can be written either by using `''` (single quotes) looking like `Hey it is me ...` or by using `""` (double quotes) looking like `"Hey it is me ..."`.
+As already mentioned string is: just a normal text of variable length and can be written either by using `''` (single quotes) looking like `'Hey it is me ...'` or by using `""` (double quotes) looking like `"Hey it is me ..."`.
 
 ## Concatenation
 

@@ -35,7 +35,7 @@ console.log("Information 1", "Information 2");
 
 ## String
 
-Simple string as a text of variable length can be written in Javascript in two main ways either via `''` (single quotes) looking like `Hey it is me ...` or `""` (double quotes) looking like `"Hey it is me ..."`. They have same meaning and function and both are valid.
+Simple string as a text of variable length can be written in Javascript in two main ways either via `''` (single quotes) looking like `'Hey it is me ...'` or `""` (double quotes) looking like `"Hey it is me ..."`. They have same meaning and function and both are valid.
 
 More on this later...
 
