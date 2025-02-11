@@ -22,3 +22,4 @@ There is folder `Repetition` which contains one file per school class which cont
 - Math time
 - String manipulation
 - Making decisions
+- Collections
