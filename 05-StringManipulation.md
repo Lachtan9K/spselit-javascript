@@ -74,15 +74,6 @@ To get length of string we can use `.length` property of string. For example:
     const alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     console.log(alphabet.length); //26
 
-### Includes
-
-To find out if string includes string or character there is function `.includes()` which will return boolean value.
-
-    //command / script execution
-    const sentence = "The quick brown fox jumps over the lazy dog.";
-    const lookupWord = "lazy";
-    console.log(`Does sentence "${sentence}" contains "${lookupWord}"? Answer is: "${sentence.includes(lookupWord)}" `);
-
 ### Index
 
 Strings in Javascript are indexed which means we can access any value from them if we know it's index. Javascript is using standard counting from **zero**.
@@ -102,6 +93,15 @@ For getting last character in string we can use `.length` property and subtract 
     console.log(alphabet[alphabet.length - 1]); //Z
 
 Note: This may look like indexing an array and it works on same principle.
+
+### Includes
+
+To find out if string includes string or character there is function `.includes()` which will return boolean value.
+
+    //command / script execution
+    const sentence = "The quick brown fox jumps over the lazy dog.";
+    const lookupWord = "lazy";
+    console.log(`Does sentence "${sentence}" contains "${lookupWord}"? Answer is: "${sentence.includes(lookupWord)}" `);
 
 ### Substring
 
