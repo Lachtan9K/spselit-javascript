@@ -23,3 +23,4 @@ There is folder `Repetition` which contains one file per school class which cont
 - String manipulation
 - Collections
 - Making decisions
+- Looping around
