@@ -57,12 +57,16 @@ Array elements are accessed via index (starting from 0). We can read them modify
 
 Add new one by setting next index to value. Either by knowing next number or using length value.
 
+    //command / script execution
+    //using arrays from above
     fruits[3] = "kiwi"; //adding new one
 
     console.log(fruits);
 
 And removing them.
 
+    //command / script execution
+    //using arrays from above
     fruits[3] = undefined; //only sets value to undefined
 
     fruits.length = 3; //shortens the array (removing place itself)
@@ -83,6 +87,71 @@ There is lots of functions which can be used with arrays. Basic ones are:
 ## Map
 
 [Map documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
+
+Map is a list of **key-value pairs**. And keys have to be **unique**. It is not serializable.
+
+Map can be manipulated only via calling functions on it.
+
+### Construction
+
+Map is always created empty. And can be constructed only via:
+
+    //command / script execution
+
+    // map - pizza menu with prices
+
+    const pizzaMenu = new Map();
+
+### Functions
+
+Map values can be **added** via function `set()`:
+
+    //command / script execution
+    //using map from above
+
+    pizzaMenu.set("Margherita", 200);
+    pizzaMenu.set("Pepperoni", 250);
+    pizzaMenu.set("Hawaiian", 280);
+
+Map values can be **get** via function `get()`, this will return **only the value** not key-value pair.
+
+    //command / script execution
+    //using map from above
+
+    console.log("What is the price of Margherita?", pizzaMenu.get("Margherita"));
+
+We can **check** for existence of **key** via function `has()` function:
+
+    //command / script execution
+    //using map from above
+
+    console.log("Pizza menu contains Hawaiian?", pizzaMenu.has("Hawaiian"));
+    console.log("Pizza menu contains Quattro Formaggi?", pizzaMenu.has("Quattro Formaggi"));
+
+We can **check size** of map via property `size`:
+
+    //command / script execution
+    //using map from above
+
+    console.log("Number of items in pizza menu:", pizzaMenu.size);
+
+And **remove items** via function `delete()`:
+
+    //command / script execution
+    //using map from above
+
+    pizzaMenu.delete("Hawaiian");
+
+    console.log(pizzaMenu);
+
+Or **remove everything** via function `clear()`:
+
+    //command / script execution
+    //using map from above
+
+    pizzaMenu.clear();
+
+    console.log(pizzaMenu);
 
 ## Set
 
