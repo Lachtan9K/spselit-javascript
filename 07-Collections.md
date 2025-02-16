@@ -135,7 +135,7 @@ We can **check size** of map via property `size`:
 
     console.log("Number of items in pizza menu:", pizzaMenu.size);
 
-And **remove items** via function `delete()`:
+And **remove items** from map via function `delete()`:
 
     //command / script execution
     //using map from above
@@ -144,7 +144,7 @@ And **remove items** via function `delete()`:
 
     console.log(pizzaMenu);
 
-Or **remove everything** via function `clear()`:
+Or **remove everything** from map via function `clear()`:
 
     //command / script execution
     //using map from above
@@ -156,3 +156,61 @@ Or **remove everything** via function `clear()`:
 ## Set
 
 [Set documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set)
+
+Set is a list of **unique values**.
+
+Set can be manipulated only via calling functions on it.
+
+### Construction
+
+Set is always created empty. And can be constructed only via:
+
+    //command / script execution
+
+    // set - music styles
+
+    const musicStyles = new Set();
+
+### Functions
+
+Set values can be **added** via function `add()`:
+
+    //command / script execution
+    //using set from above
+
+    musicStyles.add("Rock");
+    musicStyles.add("Pop");
+    musicStyles.add("Rap");
+
+We can **check** for existence of **value** via function `has()` function:
+
+    //command / script execution
+    //using set from above
+
+    console.log("Does music styles contains Rap?", musicStyles.has("Rap"));
+    console.log("Does music styles contains Jazz?", musicStyles.has("Jazz"));
+
+We can **check size** of set via property `size`:
+
+    //command / script execution
+    //using set from above
+
+    console.log("Number of items in music styles:", musicStyles.size);
+
+And **remove items** from set via function `delete()`:
+
+    //command / script execution
+    //using set from above
+
+    musicStyles.delete("Rap");
+
+    console.log(musicStyles);
+
+Or **remove everything** from set via function `clear()`:
+
+    //command / script execution
+    //using set from above
+
+    musicStyles.clear();
+
+    console.log(musicStyles);
