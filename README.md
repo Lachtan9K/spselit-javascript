@@ -21,5 +21,5 @@ There is folder `Repetition` which contains one file per school class which cont
 - Hello world!
 - Math time
 - String manipulation
-- Making decisions
 - Collections
+- Making decisions
