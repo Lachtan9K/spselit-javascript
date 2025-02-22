@@ -18,7 +18,7 @@ Standard while loop syntax looks like:
         //update condition or break
     }
 
-`condition` is either bool variable or expression resulting in bool value. Which defines if code inside of loop should be executed.
+`while` keyword defines we will be using **while** loop. `condition` is either bool variable or expression resulting in bool value. Which defines if code inside of loop should be executed.
 
 Every loop needs to have a way to update values used in `condition` so that loop can exit. Or it needs to have direct exit via `break` statement.
 
@@ -113,6 +113,32 @@ Rewritten example from above as do-while.
 ## For
 
 For loop is loop which is used mostly in situations when we know how many times we need to execute it.
+
+Standard for loop syntax looks like:
+
+    for (initializer; condition; final-expression) {
+        // code to run
+    }
+
+`for` keyword defines we will be using **for** loop. Different parts of loop definition are separated by `;` (semicolon) and are optional. `initializer` is mostly number type variable defining how many times loop already run it is called **counter variable**. `condition` expression resulting in bool value which defines if loop should run. `final-expression` is always evaluated when loop finishes iteration and is used to update **counter variable**.
+
+There is simple example: We need to grade all test.
+
+    // script execution
+
+    // returns random integer between 0 and max (exclusive)
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+    }
+
+    // for loop
+    const testToGrade = 26;
+
+    for (let i = 0; i < testToGrade; i++) {
+        console.log("Test graded, points:", getRandomInt(101));
+    }
+
+    console.log("All test have been graded!");
 
 ## Looping through collections
 
