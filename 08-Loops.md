@@ -142,8 +142,124 @@ There is simple example: We need to grade all test.
 
 ## Looping through collections
 
-### For..of
+Collections are often used in loops to traverse data they are holding. Loops such as for can be used for this activity but there are specialized loops like **for...of** which are better.
+
+Example of standard **for** loop: Writing out names of EU countries from array capitalized.
+
+    // script execution
+
+    const euCountriesArray = [
+        "Germany",
+        "France",
+        "Italy",
+        "Spain",
+        "Poland",
+        "Netherlands",
+        "Belgium",
+        "Greece",
+    ];
+
+    for (let i = 0; i < euCountriesArray.length; i++) {
+        console.log(euCountriesArray[i].toUpperCase());
+    }
+
+### For...of
+
+Standard for...of loop syntax looks like:
+
+    for (const variable of collection) {
+        // code to run
+    }
+
+`for` keyword defines we will be using **for** loop in this case specialized version. `variable` is place for current value from collection. `collection` defines which collection we are traversing.
+
+This way we can work with individual values from array, but not modify content of array itself. For that reason we are working with values as **constants**.
+
+Example from above rewritten as **for...of**:
+
+    // script execution
+
+    const euCountriesArray = [
+        "Germany",
+        "France",
+        "Italy",
+        "Spain",
+        "Poland",
+        "Netherlands",
+        "Belgium",
+        "Greece",
+    ];
+
+    for (const country of euCountriesArray) {
+        console.log(country.toUpperCase());
+    }
 
 ### Map
 
+Map function on collection allows us to modify each item and create a new collection of these modified items.
+
+Standard **map** syntax looks like:
+
+    const newCollection = collection.map(function);
+
+`collection` represents collection we want to traverse. `function` represents function which will be executed for every item in collection. `newCollection` represents newly created collection from collection with modified items.
+
+Example: Creating collection of EU country names with capitalized letters from collection of EU country names with standard capitalization.
+
+    // script execution
+
+    // function which will uppercase a string
+    function toUpperCase(string) {
+        return string.toUpperCase();
+    }
+
+    const euCountriesArray = [
+        "Germany",
+        "France",
+        "Italy",
+        "Spain",
+        "Poland",
+        "Netherlands",
+        "Belgium",
+        "Greece",
+    ];
+    console.log(euCountriesArray);
+
+    const euCountriesUpper = euCountriesArray.map(toUpperCase);
+    console.log(euCountriesUpper);
+
 ### Filter
+
+Filter function on collections allows us to test each item against filter function and create a new collection of items that passed.
+
+Standard **filter** syntax looks like:
+
+    const newCollection = collection.filter(function);
+
+`collection` represents collection we want to traverse. `function` represents function which will be executed for every item in collection testing them, this function **must return boolean value**. `newCollection` represents newly created collection from collection with items which passed filter test.
+
+Example: Creating collection of EU country names which are shorter or equal to 6 characters from collection of EU country names.
+
+    // script execution
+
+    // function which will return bool on condition string is shorter or equal to 6 characters
+    function hasShortName(string) {
+        return string.length <= 6;
+    }
+
+    const euCountriesArray = [
+        "Germany",
+        "France",
+        "Italy",
+        "Spain",
+        "Poland",
+        "Netherlands",
+        "Belgium",
+        "Greece",
+    ];
+    console.log(euCountriesArray);
+
+    const euCountriesWithShortNames = euCountriesArray.filter(hasShortName);
+    console.log(euCountriesWithShortNames);
+
+Note: We can combine usage of functions on collections. Order of functions matter.
