@@ -194,6 +194,41 @@ Example from above rewritten as **for...of**:
         console.log(country.toUpperCase());
     }
 
+### ForEach
+
+ForEach function allows to use provided function for each member of collection.
+
+Standard **forEach** syntax looks like:
+
+    collection.forEach(function);
+
+`collection` represents collection we want to traverse. `function` represents function which will be executed for every item in collection.
+
+Note: `forEach` function may take more then one parameter. Their definition, optionality and values are dependent on underlying collection.
+
+Example: Logging each member of collection.
+
+    // script execution
+
+    // function will log provided variable
+    function justLog(string) {
+        return console.log(string);
+    }
+
+    const euCountriesArray = [
+        "Germany",
+        "France",
+        "Italy",
+        "Spain",
+        "Poland",
+        "Netherlands",
+        "Belgium",
+        "Greece",
+    ];
+    console.log(euCountriesArray);
+
+    euCountriesArray.forEach(justLog);
+
 ### Map
 
 Map function on collection allows us to modify each item and create a new collection of these modified items.
