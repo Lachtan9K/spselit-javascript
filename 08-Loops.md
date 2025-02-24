@@ -142,7 +142,7 @@ There is simple example: We need to grade all test.
 
 ## Looping through collections
 
-Collections are often used in loops to traverse data they are holding. Loops such as for can be used for this activity but there are specialized loops like **for...of** which are better.
+Collections are often used in loops to traverse data they are holding. Loops such as **for** can be used for this activity but there are specialized loops like **for...of** which are better.
 
 Example of standard **for** loop: Writing out names of EU countries from array capitalized.
 
@@ -165,7 +165,7 @@ Example of standard **for** loop: Writing out names of EU countries from array c
 
 ### For...of
 
-Standard for...of loop syntax looks like:
+Standard **for...of** loop syntax looks like:
 
     for (const variable of collection) {
         // code to run
@@ -231,13 +231,13 @@ Example: Logging each member of collection.
 
 ### Map
 
-Map function on collection allows us to modify each item and create a new collection of these modified items.
+Map function is available only for **array** collection and allows us to modify each item and create a new array collection of these modified items.
 
 Standard **map** syntax looks like:
 
     const newCollection = collection.map(function);
 
-`collection` represents collection we want to traverse. `function` represents function which will be executed for every item in collection. `newCollection` represents newly created collection from collection with modified items.
+`collection` represents **array** collection we want to traverse. `function` represents function which will be executed for every item in collection. `newCollection` represents newly created **array** collection from collection with modified items.
 
 Example: Creating collection of EU country names with capitalized letters from collection of EU country names with standard capitalization.
 
@@ -265,13 +265,13 @@ Example: Creating collection of EU country names with capitalized letters from c
 
 ### Filter
 
-Filter function on collections allows us to test each item against filter function and create a new collection of items that passed.
+Filter function is available only for **array** collection and allows us to test each item against filter function and create a new **array** collection of items that passed.
 
 Standard **filter** syntax looks like:
 
     const newCollection = collection.filter(function);
 
-`collection` represents collection we want to traverse. `function` represents function which will be executed for every item in collection testing them, this function **must return boolean value**. `newCollection` represents newly created collection from collection with items which passed filter test.
+`collection` represents **array** collection we want to traverse. `function` represents function which will be executed for every item in collection testing them, this function **must return boolean value**. `newCollection` represents newly created **array** collection from items which passed filter test.
 
 Example: Creating collection of EU country names which are shorter or equal to 6 characters from collection of EU country names.
 
@@ -297,4 +297,4 @@ Example: Creating collection of EU country names which are shorter or equal to 6
     const euCountriesWithShortNames = euCountriesArray.filter(hasShortName);
     console.log(euCountriesWithShortNames);
 
-Note: We can combine usage of functions on collections. Order of functions matter.
+Note: We can combine usage of functions on **array** collections. Order of functions matter.
