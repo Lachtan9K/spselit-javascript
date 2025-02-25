@@ -14,9 +14,9 @@ Example: Calling function `log` on **console** and providing it with one string 
 
     console.log("Still here!");
 
-### Missing ()
+Note: If you invoke function by just calling it's name, without adding `()` (brackets) after it. It won't be called and it will return information that it is function or in case that code is known then with full code for that function (browser).
 
-### Invoking non existent function
+Note: Calling nonexistent function will throw error. It will produce different types of error based on if function was called from an object or not.
 
 ## Creating function
 
