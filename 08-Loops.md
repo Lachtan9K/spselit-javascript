@@ -6,11 +6,11 @@ There are two distinct ways how to loop either till something happens for that w
 
 ## While
 
-While loop is most universal loop available in Javascript. It can be used in any situation requiring looping, though other loops may be better suited.
+**While loop** is most universal loop available in Javascript. It can be used in any situation requiring looping, though other loops may be better suited.
 
-Main usage of while loop is do something until something happens.
+Main usage of **while loop** is to repeatedly do something until something happens.
 
-Standard while loop syntax looks like:
+Standard **while loop** syntax looks like:
 
     while (condition) {
         // code to run
@@ -18,7 +18,7 @@ Standard while loop syntax looks like:
         //update condition or break
     }
 
-`while` keyword defines we will be using **while** loop. `condition` inside of `()` is either bool variable or expression resulting in bool value. Which defines if code inside of loop should be executed.
+`while` keyword defines we will be using **while** loop. `condition` inside of `()` is either bool variable or expression resulting in bool value. Which defines if code inside of loop should be executed. Then between `{}` follows code block which will be executed for each loop.
 
 Every loop needs to have a way to update values used in `condition` so that loop can exit. Or it needs to have direct exit via `break` statement.
 
