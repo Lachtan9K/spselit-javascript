@@ -188,6 +188,7 @@ Example of standard **for** loop: Writing out names of EU countries from array c
         "Belgium",
         "Greece",
     ];
+    console.log(euCountriesArray);
 
     for (let i = 0; i < euCountriesArray.length; i++) {
         console.log(euCountriesArray[i].toUpperCase());
@@ -219,6 +220,7 @@ Example from above rewritten as **for...of**:
         "Belgium",
         "Greece",
     ];
+    console.log(euCountriesArray);
 
     for (const country of euCountriesArray) {
         console.log(country.toUpperCase());
