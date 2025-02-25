@@ -103,7 +103,17 @@ Variant of script from above which is using directly produced value in loop as p
 
 ### Do while variant
 
-Is specialized variant which ensures that code is executed at least once before condition is checked.
+Is specialized variant which ensures that code is executed **at least once** before condition is checked.
+
+Standard **do-while** loop syntax looks like:
+
+    do {
+        // code to run
+
+        //update condition or break
+    } while (condition);
+
+`do` keyword defines we will be using **do-while** variant of **while** loop. Then between `{}` follows code block which will be executed for each loop. After that follows `while` keyword and condition inside of `()` is either bool variable or expression resulting in bool value. Which defines if code inside of loop should be executed **again**.
 
 Rewritten example from above as **do-while** loop.
 
