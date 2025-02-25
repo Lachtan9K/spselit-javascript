@@ -18,9 +18,11 @@ Standard while loop syntax looks like:
         //update condition or break
     }
 
-`while` keyword defines we will be using **while** loop. `condition` is either bool variable or expression resulting in bool value. Which defines if code inside of loop should be executed.
+`while` keyword defines we will be using **while** loop. `condition` inside of `()` is either bool variable or expression resulting in bool value. Which defines if code inside of loop should be executed.
 
 Every loop needs to have a way to update values used in `condition` so that loop can exit. Or it needs to have direct exit via `break` statement.
+
+Creating loop with condition always evaluating to `true` and without direct exit will create infinite loop. Infinite loops will crash browser tab.
 
 There is simple example: We have test which can be passed when score is more than 90 points, every test score is given on random (between 0 and 100 points) and we want to know how many tries it took. Given that this is using random it will produce different values every time. This variant is using setting **loop condition** to `false` to exit loop.
 
