@@ -329,4 +329,4 @@ Example: Creating collection of EU country names which are shorter or equal to 6
     const euCountriesWithShortNames = euCountriesArray.filter(hasShortName);
     console.log(euCountriesWithShortNames);
 
-Note: We can combine usage of functions on **array** collections. Order of functions matter.
+Note: We can chain function calling. Standard usage is calling `collection.filter(filter_function).map(map_function)` which will process both of them without creating array with temp result between them. This will save on memory and variable names. Order of functions matter as if we `filter` first we may `map` less collection members then all of them.
