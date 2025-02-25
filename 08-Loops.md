@@ -77,11 +77,33 @@ Variant of script from above which is using `break` statement to exit loop.
 
     console.log(`You passed after ${tries} tries congratulation!`);
 
+Variant of script from above which is using directly produced value in loop as part of loop condition expression.
+
+    // returns random integer between 0 and max (exclusive)
+    function getRandomInt(max) {
+        return Math.floor(Math.random() * max);
+    }
+
+    const requiredPointsToSucceed = 90;
+
+    let lastTryPoints = 0; //has to be initialized to 0 as no points were earned yet
+    let tries = 0;
+
+    while (lastTryPoints < requiredPointsToSucceed) {
+        tries++;
+
+        lastTryPoints = getRandomInt(101);
+
+        console.log(`Try ${tries}: ${lastTryPoints} points`);
+    }
+
+    console.log(`You passed after ${tries} tries congratulation!`);
+
 ### Do while variant
 
 Is specialized variant which ensures that code is executed at least once before condition is checked.
 
-Rewritten example from above as do-while.
+Rewritten example from above as **do-while** loop.
 
     // script execution
 
@@ -93,20 +115,16 @@ Rewritten example from above as do-while.
     // do-while loop
     const requiredPointsToSucceed = 90;
 
-    let passed = false;
+    let lastTryPoints = 0; //has to be initialized to 0 as no points were earned yet
     let tries = 0;
 
     do {
         tries++;
 
-        const points = getRandomInt(101);
+        lastTryPoints = getRandomInt(101);
 
-        console.log(`Try ${tries}: ${points} points`);
-
-        if (points >= requiredPointsToSucceed) {
-            passed = true;
-        }
-    } while (!passed);
+        console.log(`Try ${tries}: ${lastTryPoints} points`);
+    } while (lastTryPoints < requiredPointsToSucceed);
 
     console.log(`You passed after ${tries} tries congratulation!`);
 
