@@ -22,9 +22,41 @@ Note: Calling nonexistent function will throw error. It will produce different t
 
 Functions can be created in 3 ways. Either via **declaration** or as an **anonymous function** or as an **arrow function**.
 
-### Declaration
+### Function declaration
 
-### Anonymous functions
+Function created through declaration are also called named functions.
+
+Standard syntax is:
+
+    function functionName() {
+        //code to execute
+    }
+
+After keyword `function` which defines that function will be declared. Comes `functionName` name under which the function will be available. Then follows `()` which may contain parameters (example bellow). Then between `{}` follows code block which will be executed. This function will return `undefined` when called.
+
+Syntax with return statement (value `0`):
+
+    function functionName() {
+        //code to execute
+
+        return 0;
+    }
+
+Only difference against example above is the `return` statement. In this case function will return `0` not `undefined`.
+
+Syntax with parameters:
+
+    function functionName(variableName) {
+        //code to execute
+
+        return 0;
+    }
+
+Only difference against example above is the provided variable `variableName` between `()`. Function can have more then one variable. And some of them may be optional - in that case variable will have assigned value (for example `variableName = 0`).
+
+Note: Functions constructed in this way, can be called before they are defined, thanks to **hoisting**.
+
+### Anonymous functions (Function expression)
 
 TODO: example on array
 
