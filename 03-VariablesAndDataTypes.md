@@ -69,13 +69,21 @@ Has to be **assigned** when **instantiated**.
 
 `var` is older type and it is not recommend to be used. Only reasonable usage is to support older browsers (Internet Explorer).
 
-It is registered on global scope (on it later) which may lead to variable name clashes.
+Supports **partial hoisting** (can be instantiated after being assigned, respectively it is instantiated automatically with `undefined` value).
 
-And supports variable **hoisting** (can be instantiated after being assigned, respectively it is instantiated automatically).
+Note: This type does not support **block** scoping.
 
 School: In school we will not be using this one.
 
+### No access type
+
+If variable is assigned without being **instantiated** (for example later in code as `var`). It will be created on global scope (on it later) making it accessible from everywhere in script it wont be cleaned from memory till whole script is finished which may lead to variable name clashes.
+
+Note: This is serious problem and should not be used.
+
 ## Variable scopes
+
+Javascript supports function and block scoping.
 
 Code is separated to blocks (scopes) in which variables are available. Variables are provided to inner scopes but not outer.
 
@@ -83,7 +91,7 @@ This is done for a reason to not pollute space with variables as their names wou
 
 Scopes are:
 
-- script
+- script (global scope)
 - class
 - function
 - `{ }` block
