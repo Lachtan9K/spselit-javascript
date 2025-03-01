@@ -14,6 +14,8 @@ Example: Calling function `log` on **console** and providing it with one string 
 
     console.log("Still here!");
 
+In case that **variable** contains function which is common then execution is using same pattern as above. We will use variable name followed by `()` (brackets).
+
 Note: If you invoke function by just calling it's name, without adding `()` (brackets) after it it won't be called and it will return information that it is function or in case that code is known then with full code for that function (for example in browser).
 
 Note: Calling nonexistent function will throw error. It will produce different types of error based on if function which was called belongs to an object or not.
@@ -32,6 +34,8 @@ Standard syntax is:
         //code to execute
     }
 
+    functionName()
+
 After keyword `function` which defines that function will be declared. Comes `functionName` name under which the function will be available. Then follows `()` which may contain parameters (example bellow). Then between `{}` follows code block which will be executed. This function will return `undefined` when called.
 
 Syntax with return statement (value `0`):
@@ -41,6 +45,8 @@ Syntax with return statement (value `0`):
 
         return 0;
     }
+
+    functionName()
 
 Only difference against example above is the `return` statement. In this case function will return `0` not `undefined`.
 
@@ -52,13 +58,88 @@ Syntax with parameters:
         return 0;
     }
 
+    functionName(0)
+
 Only difference against example above is the provided variable `variableName` between `()`. Function can have more then one variable. And some of them may be optional - in that case variable will have assigned value (for example `variableName = 0`).
 
 Note: Functions constructed in this way, can be called before they are defined, thanks to **hoisting**.
 
-### Anonymous functions (Function expression)
+### Function expression (Anonymous functions)
 
-TODO: example on array
+Other option how to construct functions is via function expression sometimes called anonymous function.
+
+This can be used when we don't **need** or **want** to provide function to whole scope.
+
+Standard syntax is:
+
+    const myFunction = function () {
+        //code to execute
+    }
+
+    myFunction();
+
+Main difference here in comparison to **function declaration** is that function does start with `function` keyword but with assignment to **variable** without it it would not make sense to create function as it could not be called (except for special variant bellow). After assignment follows `function` keyword, then follows `()` which may contain parameters and then between `{}` follows code block which will be executed. Same as for **function declaration** if function does not contain `return` keyword it will return `undefined`.
+
+Note: Functional expressions **can be named**. But name is available only inside function itself. So it can be used to call itself. For example calculation of _factorial_.
+
+Example of upgrading function made via **function declaration** to **function expression**, on logging each member of collection. From:
+
+    // script execution
+
+    // function will log provided variable
+    function justLog(string) {
+        return console.log(string);
+    }
+
+    const euCountriesArray = [
+        "Germany",
+        "France",
+        "Italy",
+        "Spain",
+        "Poland",
+        "Netherlands",
+        "Belgium",
+        "Greece",
+    ];
+    console.log(euCountriesArray);
+
+    euCountriesArray.forEach(justLog);
+
+To:
+
+    // script execution
+
+    const euCountriesArray = [
+        "Germany",
+        "France",
+        "Italy",
+        "Spain",
+        "Poland",
+        "Netherlands",
+        "Belgium",
+        "Greece",
+    ];
+    console.log(euCountriesArray);
+
+    euCountriesArray.forEach(function (value) {
+        console.log(value);
+    });
+
+Function `justLog` from from part was removed and place from which was called got **function expression** `function (value) { console.log(value); }` which does same exact operation as did `justLog` function. Main advantage is that there is no one time use function polluting scope and code is more readable.
+
+#### Immediately Invoked Function Expression (IIFE)
+
+This is special type of function expression which is immediately invoked (hence the name).
+
+Example:
+
+    //script execution
+
+    (function () {
+        console.log("IIFE");
+    })();
+
+Note: This was mostly used in past when block scopes and models did not exist yet. Now this is mostly obsolete as same thing can be done more cleanly but still can be found in older code.
 
 ### Arrow functions
 
@@ -69,3 +150,13 @@ TODO: example on array (upgrade anonymous function)
 **Parameters** and **arguments** have slightly different meaning but are mostly used interchangeably. **Parameters** are variables which are declared in function definition. **Arguments** are variables which are provided to function when it is invoked.
 
 Note: Even professional programmers are using these two most of the time interchangeably.
+
+## Function callback
+
+## Passing values
+
+TODO passing by value, passing by sharing (objects)
+
+## Accessing variables
+
+## Scopes second take
