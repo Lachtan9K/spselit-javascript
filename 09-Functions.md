@@ -76,6 +76,18 @@ Syntax with **default** parameters:
 
 Only difference against example above is that we **assign value** to parameter `variableName`. In case that function is called without it or if provided argument is of type `undefined` it will by supplied by our value.
 
+Other option to get parameters in function is via **rest parameter syntax**. This one allows function to accept undefined number of arguments and access them as an array. Only one **rest parameter syntax** can be used in definition. It can be combined with other params, but it has to be **last** param.
+
+Syntax with **rest** parameters:
+
+    function functionName(variableName, ...restOfVariables) {
+        //code to execute
+
+        return 0;
+    }
+
+    functionName(20, 30, 40);
+
 ### Function expression (Anonymous functions)
 
 Other option how to construct functions is via function expression sometimes called anonymous function.
