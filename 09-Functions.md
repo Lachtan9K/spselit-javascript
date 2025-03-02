@@ -28,13 +28,15 @@ Functions can be created in 3 ways. Either via **declaration** or as an **anonym
 
 Function created through declaration are also called named functions.
 
+Note: Functions constructed in this way, can be called before they are defined, thanks to **hoisting**.
+
 Standard syntax is:
 
     function functionName() {
         //code to execute
     }
 
-    functionName()
+    functionName();
 
 After keyword `function` which defines that function will be declared. Comes `functionName` name under which the function will be available. Then follows `()` which may contain parameters (example bellow). Then between `{}` follows code block which will be executed. This function will return `undefined` when called.
 
@@ -46,7 +48,7 @@ Syntax with return statement (value `0`):
         return 0;
     }
 
-    functionName()
+    functionName();
 
 Only difference against example above is the `return` statement. In this case function will return `0` not `undefined`.
 
@@ -58,11 +60,21 @@ Syntax with parameters:
         return 0;
     }
 
-    functionName(0)
+    functionName(0);
 
-Only difference against example above is the provided variable `variableName` between `()`. Function can have more then one variable. And some of them may be optional - in that case variable will have assigned value (for example `variableName = 0`).
+Only difference against example above is the provided parameter `variableName` between `()`. Function can have more then one parameter. If function is called without providing arguments execution will happen and all parameters will be supplied with `undefined` values.
 
-Note: Functions constructed in this way, can be called before they are defined, thanks to **hoisting**.
+Syntax with **default** parameters:
+
+    function functionName(variableName = 0) {
+        //code to execute
+
+        return 0;
+    }
+
+    functionName();
+
+Only difference against example above is that we **assign value** to parameter `variableName`. In case that function is called without it or if provided argument is of type `undefined` it will by supplied by our value.
 
 ### Function expression (Anonymous functions)
 
