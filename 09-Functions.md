@@ -106,6 +106,8 @@ Main difference here in comparison to **function declaration** is that function 
 
 Note: Functional expressions **can be named**. But name is available only inside function itself. So it can be used to call itself. For example calculation of _factorial_.
 
+#### Turning function declaration to function expression
+
 Example of upgrading function made via **function declaration** to **function expression**, on logging each member of collection. From:
 
     // script execution
@@ -167,7 +169,72 @@ Note: This was mostly used in past when block scopes and models did not exist ye
 
 ### Arrow functions
 
-TODO: example on array (upgrade anonymous function)
+Other option how to construct functions is via arrow function syntax which is closer to function expression but can't be used interchangeably.
+
+Standard syntax is:
+
+    const myFunction = () => {
+        //code to execute
+    };
+
+    myFunction();
+
+Function is written as `()` brackets which may hold parameters followed by `=>` (an arrow) and then between `{}` follows code block which will be executed. If no `return` statement is provided it will return `undefined`.
+
+Also it can be written as:
+
+    const myFunction2 = a => a * a;
+
+    console.log(myFunction2(7));
+
+In this case there are no `()` brackets as there is only one parameter and there are is no body (`{}`) as provided expression is `return`.
+
+#### Turning function declaration to arrow function
+
+Example of upgrading function made via **function declaration** to **arrow function**, on logging each member of collection. From:
+
+    // script execution
+
+    // function will log provided variable
+    function justLog(string) {
+        return console.log(string);
+    }
+
+    const euCountriesArray = [
+        "Germany",
+        "France",
+        "Italy",
+        "Spain",
+        "Poland",
+        "Netherlands",
+        "Belgium",
+        "Greece",
+    ];
+    console.log(euCountriesArray);
+
+    euCountriesArray.forEach(justLog);
+
+To:
+
+    // script execution
+
+    const euCountriesArray = [
+        "Germany",
+        "France",
+        "Italy",
+        "Spain",
+        "Poland",
+        "Netherlands",
+        "Belgium",
+        "Greece",
+    ];
+    console.log(euCountriesArray);
+
+    euCountriesArray.forEach((value) => {
+        console.log(value);
+    });
+
+Function `justLog` from from part was removed and place from which was called got **arrow function** `(value) => { console.log(value); }` which does same exact operation as did `justLog` function. Main advantage is that there is no one time use function polluting scope and code is more readable.
 
 ## Parameters vs arguments
 
