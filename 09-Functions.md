@@ -153,9 +153,76 @@ Note: Even professional programmers are using these two most of the time interch
 
 ## Function callback
 
-## Passing values
+## Passing arguments
 
-TODO passing by value, passing by sharing (objects)
+There is difference in how arguments are passed to functions and what happens to them. Difference is if the argument data type is an **object** or **not**.
+
+### Pass by value
+
+When arguments which are **not objects** are passed to function they are **passed by value**. That means that their value will be copied to function and all modification to that value will not be propagated outside.
+
+Example:
+
+    //script execution
+
+    // function which tries to modify provided value
+    function modifyArgument(x) {
+        x = 5;
+
+        console.log("X inside:", x); // 5
+    }
+
+    let x = 0;
+
+    console.log("X before:", x); // 0
+
+    modifyArgument(x);
+
+    console.log("X after:", x); // 0
+
+### Pass by sharing
+
+When arguments which are **objects** are passed to function they are **passed by sharing**. This means that reference to that object will be copied to function. Object it self can be modified and modification will be available after function execution ends. Assigning value to argument itself will not be carried outside of function.
+
+Example:
+
+    //script execution
+
+    // function will modify provided object
+    function modifyObject(obj) {
+        obj.name = "John";
+
+        console.log("Object inside modify:", obj); // { name: "John" }
+    }
+
+    // function will try to replace provided object
+    function replaceObject(obj) {
+        obj = {
+            name: "Frank",
+        };
+
+        console.log("Object inside replace:", obj); // { name: "Frank" }
+    }
+
+    let person = {
+        name: "Ema",
+    };
+
+    console.log("Object before:", person); // { name: "Ema" }
+
+    modifyObject(person);
+
+    console.log("Object after modify:", person); // { name: "John" }
+
+    replaceObject(person);
+
+    console.log("Object after replace:", person); // { name: "John" }
+
+### Pass by reference
+
+Javascript does not support **passing by reference**.
+
+Passing by reference mean that assigning value to argument itself would be carried outside of function.
 
 ## Accessing variables
 
