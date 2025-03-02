@@ -175,6 +175,12 @@ TODO: example on array (upgrade anonymous function)
 
 Note: Even professional programmers are using these two most of the time interchangeably.
 
+### Function vs Method
+
+**Functions** defined inside of **objects** are called **methods**.
+
+Note: Even professional programmers are using these two most of the time interchangeably.
+
 ## Function callback
 
 ## Passing arguments
