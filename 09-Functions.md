@@ -250,6 +250,34 @@ Note: Even professional programmers are using these two most of the time interch
 
 ## Function callback
 
+Function callback is situation when function is expecting to get another function which it will call. This is precisely what we used in examples for `.map()` or `.filter()` on `array`.
+
+For reason that we don't get any errors on function execution we need to confirm that provided variable is a function.
+
+Standard construction with protection is:
+
+    //script execution
+
+    function func(callMeFunc) {
+        if (!callMeFunc) {
+            console.error("Function was undefined");
+            return;
+        }
+
+        if (typeof callMeFunc !== "function") {
+            console.error("Not a function");
+            return;
+        }
+
+        callMeFunc();
+    }
+
+    func();
+    func(10);
+    func(startCar); //this is function defined above
+
+In the example above we are first checking if provided value is not `undefined`. This construction is used often even in non function checks as it is universal and it is working on principle of equity in which `undefined` **equals** to `false` (Javascript specific). Other check is for provided variable being function so that we will not execute something which is not function.
+
 ## Passing arguments
 
 There is difference in how arguments are passed to functions and what happens to them. Difference is if the argument data type is an **object** or **not**.
