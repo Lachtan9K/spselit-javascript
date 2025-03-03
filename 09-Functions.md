@@ -189,6 +189,8 @@ Also it can be written as:
 
 In this case there are no `()` brackets as there is only one parameter and there are is no body (`{}`) as provided expression is `return`.
 
+Arrow function can't be used as a method. There is a problem with `this` binding (on this later).
+
 #### Turning function declaration to arrow function
 
 Example of upgrading function made via **function declaration** to **arrow function**, on logging each member of collection. From:
