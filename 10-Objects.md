@@ -56,3 +56,21 @@ Example creating person (same as above) via construction function:
     const person = new Person("John", "Smith", 30);
 
 We defined **function** _Person_ (convention is to use capital letter for construction functions). This function may have defined params which will pass provided arguments to object properties. Every property requires use of `this` keyword to get value properly passed (more on this later). Then object is constructed via adding `new` keyword before standard **function invocation**.
+
+## Accessing object properties
+
+Object properties are accessed via `.` (dot) - so called **dot nation**.
+
+Example:
+
+    console.log(person.firstName);
+    person.introduceYourself();
+
+Object properties are also accessible via **bracket notation**.
+
+Example:
+
+    console.log(person["firstName"]);
+    person["introduceYourself"]();
+
+## this keyword
