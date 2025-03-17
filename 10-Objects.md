@@ -4,7 +4,7 @@ Object is a collection of related data and functionality. Usually consisting of 
 
 ## Creating objects
 
-Object can be created in many ways. Most common are using an **object initializer**, using **a constructor function**, using **`Object.create()` function**, **from class**.
+Object can be created in many ways. Most common are using an **object initializer**, using a **constructor function**, using **`Object.create()` method**, **from class**.
 
 ### Object initializer
 
@@ -35,3 +35,24 @@ Example creating person:
 
     console.log(person);
     person.introduceYourself();
+
+### Construction function
+
+Object can be created by defining constructor function and then instancing it via `new` keyword.
+
+Example creating person (same as above) via construction function:
+
+    //script execution
+
+    function Person(firstName, lastName, age) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.age = age;
+        this.introduceYourself = function () {
+            console.log("It is me Ma...", "Ehm I am " + this.firstName + " " + this.lastName);
+        };
+    }
+
+    const person = new Person("John", "Smith", 30);
+
+We defined **function** _Person_ (convention is to use capital letter for construction functions). This function may have defined params which will pass provided arguments to object properties. Every property requires use of `this` keyword to get value properly passed (more on this later). Then object is constructed via adding `new` keyword before standard **function invocation**.
