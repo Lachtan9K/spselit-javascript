@@ -350,7 +350,3 @@ Example:
 Javascript does not support **passing by reference**.
 
 Passing by reference mean that assigning value to argument itself would be carried outside of function.
-
-## Accessing variables
-
-## Scopes second take
