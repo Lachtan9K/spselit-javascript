@@ -1,7 +1,6 @@
 This is list of things which needs to be done. They are not in any particular order.
 
 - theory
-  - functions
   - objects
   - events
   - DOM manipulation
@@ -19,5 +18,8 @@ This is list of things which needs to be done. They are not in any particular or
   - saving data in browser (local, session)
   - using 3rd party packages (validation?, axios)
   - communicating with 3rd party API in browser
+  - extras/expert topics
+    - scopes
+    - optimization
 - automatic testing environment
 - examples of practical usages of JS
