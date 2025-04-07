@@ -108,3 +108,34 @@ Keyword `this` is used inside of `introduceYourself` method to access `firstName
 Keyword `this` always points to an object. Object which will be supplied for `this` depends on **how was function invoked**, **not where it is defined**. If function is **defined** via _function declaration_ and it is invoked, then `this` points to an object to whom function belongs.
 
 In case that `this` is used outside of an object or function was not bind it will point to _global object_. Global object for **web browser** is _window_ for **NodeJS** it is _global_.
+
+## Often used objects
+
+Here is list of often used object:
+
+- Map
+- Set
+- Array
+- Date
+
+### Date
+
+[Date documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date)
+
+Build in object which represent date and time with timezone handling. Contains bunch of methods for date and time manipulation.
+
+Date is represented as number of **milliseconds** from start of epoch which is January 1, 1970, UTC, start of day (same as UNIX epoch).
+
+Date object can be created by calling `new Date()` then it will contain **current date**. Or by passing formatted date string as parameter to that constructor or by passing multiple parameters representing year, month and so on - to create specific date.
+
+Working with date is difficult because of timezone handling.
+
+#### Usage
+
+Date is mostly used in three forms as a date object for manipulation, representation, as milliseconds for comparison or as "date string" for data transfer.
+
+To get milliseconds we can use function `Date.now()` or when we already have existing date object we can use method `.getTime()`. Comparison is done on milliseconds as it is easy mathematic equation.
+
+Note: Comparing two date objects on equality will result in **not equal** as it comparing objects itself not just their content.
+
+Best way to create "date string" is by calling `.toISOString()` as it will create string based on ISO 8601 format.
