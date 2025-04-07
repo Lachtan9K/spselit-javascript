@@ -78,3 +78,29 @@ Example:
     person["introduceYourself"]();
 
 ## this keyword
+
+Effectively working with objects requires understanding of `this` keyword and how it behaves. This whole topic is complicated so only required part will be shared.
+
+When keyword `this` is used inside of an object it allow access to properties and methods of given object.
+
+Example creating person (same as above):
+
+    //script execution
+
+    const person = {
+        firstName: "John",
+        lastName: "Smith",
+        age: 30,
+        introduceYourself: function () {
+            console.log("It is me Ma...", "Ehm I am " + this.firstName + " " + this.lastName);
+        },
+    };
+
+    console.log(person);
+    person.introduceYourself();
+
+Keyword `this` is used inside of `introduceYourself` method to access `firstName` and `lastName` properties of given object. So we can reuse existing values.
+
+Keyword `this` always points to an object. Object which will be supplied for `this` depends on **how was function invoked**, **not where it is defined**. If function is **defined** via _function declaration_ and it is invoked, then `this` points to an object to whom function belongs.
+
+In case that `this` is used outside of an object or function was not bind it will point to _global object_. Global object for **web browser** is _window_ for **NodeJS** it is _global_.
