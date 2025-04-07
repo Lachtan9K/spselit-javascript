@@ -59,6 +59,10 @@ We defined **function** _Person_ (convention is to use capital letter for constr
 
 ## Accessing object properties
 
+Object properties can be accessed, changed, added, or even removed.
+
+Note: Property removal is done via `delete` keyword. And it is not recommended.
+
 ### Via dot notation
 
 Object properties are accessed via `.` (dot) - so called **dot nation**.
