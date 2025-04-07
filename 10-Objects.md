@@ -59,12 +59,16 @@ We defined **function** _Person_ (convention is to use capital letter for constr
 
 ## Accessing object properties
 
+### Via dot notation
+
 Object properties are accessed via `.` (dot) - so called **dot nation**.
 
 Example:
 
     console.log(person.firstName);
     person.introduceYourself();
+
+### Via bracket notation
 
 Object properties are also accessible via **bracket notation**.
 
