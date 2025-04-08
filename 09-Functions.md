@@ -347,6 +347,8 @@ Example:
     replaceObject(person);
 
     console.log("Object after replace:", person); // { name: "John" }
+    
+![image](https://github.com/user-attachments/assets/993a0260-f3ff-49ad-9ce1-000fde93f693)
 
 ### Pass by reference
 
