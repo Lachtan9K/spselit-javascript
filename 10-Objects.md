@@ -139,3 +139,6 @@ To get milliseconds we can use function `Date.now()` or when we already have exi
 Note: Comparing two date objects on equality will result in **not equal** as it comparing objects itself not just their content.
 
 Best way to create "date string" is by calling `.toISOString()` as it will create string based on ISO 8601 format.
+
+
+![image](https://github.com/user-attachments/assets/bf583ba7-04e6-47bf-ab41-19df86a3b33d)
