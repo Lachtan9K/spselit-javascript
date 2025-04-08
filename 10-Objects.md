@@ -87,6 +87,14 @@ Example:
 
 Note: This can be used for manipulating dynamically added properties.
 
+## Equality
+
+Correctly assessing equality on objects is hard as engine supports only **"pointer" equality** - both variables are pointing to same object in memory. If we want to know if two different objects are equal with meaning that they have same properties and their values we have to handle that ourself.
+
+One option is using `JSON.stringify()` to convert objects to string representation and use standard equality on them. This unfortunately **does not work** in case that objects has **different order** of properties.
+
+Other option (and best) is to use `_.isEqual` function from [Lodash](https://lodash.com/docs/4.17.15#isEqual). Which does deep comparison and works without limitations
+
 ## this keyword
 
 Effectively working with objects requires understanding of `this` keyword and how it behaves. This whole topic is complicated so only required part will be shared.
