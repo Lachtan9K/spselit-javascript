@@ -63,6 +63,8 @@ Object properties can be accessed, changed, added, or even removed.
 
 Note: Property removal is done via `delete` keyword. And it is not recommended.
 
+Note: Adding properties to object should be done in same order as system is creating templates for it in background. This is important for optimization as even if objects has same properties but were added in different order then they use different template.
+
 ### Via dot notation
 
 Object properties are accessed via `.` (dot) - so called **dot nation**.
