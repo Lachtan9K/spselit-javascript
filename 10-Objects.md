@@ -87,13 +87,48 @@ Example:
 
 Note: This can be used for manipulating dynamically added properties.
 
+## Copying objects
+
+Coping objects is not same as copying primitive data types. Because of **pass by sharing** (described in 09-Functions.md).
+
+For that reason using construction:
+
+    // script execution
+
+    const myObject = {};
+    const sameObject = myObject;
+
+Will create **one** object in memory with variables `myObject` and `sameObject` pointing to it.
+
+To copy object without inner objects we can use `...` (3x dot) spread operator. Spread operator has many usages as described in it's [documentation](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax).
+
+Example of spread copying object:
+
+    // script execution
+
+    const myObject = {};
+    const newObject = { ...myObject};
+
+Will create **two** same objects in memory with variables `myObject` and `newObject` each pointing to the different one. Beware this works correctly only if there is no object inside as if there was one both new objects would share it.
+
+Another option to copy objects is via JSON:
+
+    // script execution
+
+    const myObject = {};
+    const newObject = JSON.parse(JSON.stringify(myObject));
+
+Will create **two** same objects in memory with variables `myObject` and `newObject` each pointing to different one. This copies object with any depth (does not matter how many objects are nested).
+
+Note: Copying big objects (with many properties) or with big depth requires quite a lot of resources (CPU time and memory) and should be avoided.
+
 ## Equality
 
 Correctly assessing equality on objects is hard as engine supports only **"pointer" equality** - both variables are pointing to same object in memory. If we want to know if two different objects are equal with meaning that they have same properties and their values we have to handle that ourself.
 
 One option is using `JSON.stringify()` to convert objects to string representation and use standard equality on them. This unfortunately **does not work** in case that objects has **different order** of properties.
 
-Other option (and best) is to use `_.isEqual` function from [Lodash](https://lodash.com/docs/4.17.15#isEqual). Which does deep comparison and works without limitations
+Other option (and best) is to use `_.isEqual` function from [Lodash](https://lodash.com/docs/4.17.15#isEqual). Which does deep comparison and works without limitations.
 
 ## this keyword
 
