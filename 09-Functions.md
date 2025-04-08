@@ -284,6 +284,9 @@ In the example above we are first checking if provided value is not `undefined`.
 
 There is difference in how arguments are passed to functions and what happens to them. Difference is if the argument data type is an **object** or **not**.
 
+![image](https://github.com/user-attachments/assets/e13aaf2b-288f-449f-8aec-6b20bf35ac2b)
+
+
 ### Pass by value
 
 When arguments which are **not objects** are passed to function they are **passed by value**. That means that their value will be copied to function and all modification to that value will not be propagated outside.
