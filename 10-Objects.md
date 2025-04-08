@@ -59,7 +59,9 @@ We defined **function** _Person_ (convention is to use capital letter for constr
 
 ## Accessing object properties
 
-Object properties can be accessed, changed, added, or even removed.
+Object properties can be accessed, changed, added, or even removed. How to get them can be done in two ways via **dot** or **bracket** notation.
+
+School: In school we will use primary **dot** notation.
 
 Note: Property removal is done via `delete` keyword. And it is not recommended.
 
@@ -82,6 +84,8 @@ Example:
 
     console.log(person["firstName"]);
     person["introduceYourself"]();
+
+Note: This can be used for manipulating dynamically added properties.
 
 ## this keyword
 
