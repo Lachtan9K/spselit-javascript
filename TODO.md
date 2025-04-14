@@ -1,13 +1,9 @@
 This is list of things which needs to be done. They are not in any particular order.
 
 - theory
-  - objects
   - events
   - DOM manipulation
-  - date
-  - destructuring
   - class
-  - callback
   - async
     - promises
     - async
