@@ -154,9 +154,9 @@ Example creating person (same as above):
 
 Keyword `this` is used inside of `introduceYourself` method to access `firstName` and `lastName` properties of given object. So we can reuse existing values.
 
-Keyword `this` always points to an object. Object which will be supplied for `this` depends on **how was function invoked**, **not where it is defined**. If function is **defined** via _function declaration_ and it is invoked, then `this` points to an object to whom function belongs.
+Keyword `this` always points to an object. Object which will be supplied for `this` depends on **how was function invoked**, **not where it is defined**. If function is **defined** via _function declaration_ and it is invoked, then `this` points to an object to who invoked function. For example method `introduceYourself` is invoked by calling `person.introduceYourself()` which means that `person` object calls `introduceYourself` for that reason `person` is supplied for `this`.
 
-In case that `this` is used outside of an object or function was not bind it will point to _global object_. Global object for **web browser** is _window_ for **NodeJS** it is _global_.
+In case that `this` is used outside of an object or function was not bind it will point to _global object_. Note: In strict mode `undefined` would be returned instead.
 
 ## Often used objects
 
