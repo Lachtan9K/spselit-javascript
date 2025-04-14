@@ -87,6 +87,34 @@ Example:
 
 Note: This can be used for manipulating dynamically added properties.
 
+### Via destructuring
+
+In case we need to access subset of properties of an object we can create local variables for them via [destructuring](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring) the object.
+
+Example:
+
+    //script execution
+
+    const vehicle = {
+        color: "red",
+        type: "car",
+        currentSpeed: 50,
+        topSpeed: 200,
+    };
+
+    function printSpeedInformation(vehicle) {
+        const { currentSpeed, topSpeed } = vehicle;
+        const speedPercentage = (currentSpeed / topSpeed) * 100;
+
+        console.log("Current speed: " + currentSpeed);
+        console.log("Top speed: " + topSpeed);
+        console.log("Speed percentage: " + speedPercentage + "%");
+    }
+
+Destructuring is done in `const { currentSpeed, topSpeed } = vehicle;` where we create variables `currentSpeed` and `topSpeed` and fill them with values from properties of same name from `vehicle` object.
+
+Destructuring can also be used on **arrays**.
+
 ## Copying objects
 
 Coping objects is not same as copying primitive data types. Because of **pass by sharing** (described in 09-Functions.md).
