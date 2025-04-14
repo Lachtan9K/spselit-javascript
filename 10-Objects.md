@@ -166,6 +166,7 @@ Here is list of often used object:
 - Set
 - Array
 - Date
+- Global object
 
 ### Date
 
@@ -194,3 +195,15 @@ To get milliseconds we can use function `Date.now()` or when we already have exi
 Note: Comparing two date objects on equality will result in **not equal** as it comparing objects itself not just their content.
 
 Best way to create "date string" is by calling `.toISOString()` as it will create string based on ISO 8601 format.
+
+### Global object
+
+Global object is special type of an object which may be supplied for `this` (Note: only in non-strict mode). Or it can be accessed via it's name from anywhere in script.
+
+It may be a different object base on implementation of engine. For the **web browser** it is a _window_ object for the **NodeJS** it is a _global_ object.
+
+#### Window
+
+Represents the window (tab) in which script is running.
+
+It can be used to manipulate content of website (`document` object), url, data storage, partially even browser itself. More on this practically.
