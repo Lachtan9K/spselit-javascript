@@ -177,6 +177,12 @@ Date is represented as number of **milliseconds** from start of epoch which is J
 
 Date object can be created by calling `new Date()` then it will contain **current date**. Or by passing formatted date string as parameter to that constructor or by passing multiple parameters representing year, month and so on - to create specific date.
 
+Example of date creation:
+
+    console.log(new Date().toString());
+    console.log(new Date("2025-04-14T20:00").toString());
+    console.log(new Date(2025, 3, 14, 20).toString()); //beware month is 0 based index
+
 Working with date is difficult because of timezone handling.
 
 #### Usage
