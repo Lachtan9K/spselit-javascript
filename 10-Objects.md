@@ -158,6 +158,9 @@ One option is using `JSON.stringify()` to convert objects to string representati
 
 Other option (and best) is to use `_.isEqual` function from [Lodash](https://lodash.com/docs/4.17.15#isEqual). Which does deep comparison and works without limitations.
 
+![image](https://github.com/user-attachments/assets/28aee1ac-4305-45db-9400-462083e3b470)
+
+
 ## this keyword
 
 Effectively working with objects requires understanding of `this` keyword and how it behaves. This whole topic is complicated so only required part will be shared.
