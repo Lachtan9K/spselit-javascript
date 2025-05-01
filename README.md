@@ -30,3 +30,4 @@ There is folder `Exercise` which contains some exercises for main topics. This i
 - Looping around
 - Functions
 - Objects
+- Website integration
