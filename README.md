@@ -31,3 +31,4 @@ There is folder `Exercise` which contains some exercises for main topics. This i
 - Functions
 - Objects
 - Website integration
+- DOM manipulation
