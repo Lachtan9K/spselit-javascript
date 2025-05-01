@@ -25,3 +25,21 @@ Rendering 2D and 3D objects in browser.
 [Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API)
 
 Using voice synthesizer to read parts of website.
+
+## Window
+
+Window is global object for web. Window contains **document** for current website (more in 12-DOM.md) and many useful functions for manipulating website and browser itself.
+
+Windows is specific for current open tab - it is not possible from one to manipulate other, but there are options how to share information from one to another and act upon it.
+
+### location
+
+### localstorage
+
+### alert
+
+### fetch
+
+### setInterval
+
+### setTimeout
