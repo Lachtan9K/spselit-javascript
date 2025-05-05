@@ -40,6 +40,12 @@ Windows is specific for current open tab - it is not possible from one to manipu
 
 ### fetch
 
-### setInterval
+### setInterval, setTimeout
 
-### setTimeout
+Function `setInterval()` allows to run code periodically and function `setTimeout()` allows to run code after set time. This two functions operate quite similarly and are one of few ways how to run scripts (functions in them) independently.
+
+Note: Execution context may be different then expected so `this` may return unexpected values.
+
+Note: Timing on these functions is not exact.
+
+Example in 11_WebsiteIntegration_RunningFunctions folder.
