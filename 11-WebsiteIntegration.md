@@ -26,6 +26,24 @@ Rendering 2D and 3D objects in browser.
 
 Using voice synthesizer to read parts of website.
 
+### Web Storage
+
+Browsers are offering 3 ways how to store data in browser it is `localStorage`, `sessionStorage` and `indexedDB`.
+
+School: **IndexDB** requires knowledge of **databases** which is going to be taught in 4th year. For that reason it will be skipped in this lecture.
+
+`localStorage` and `sessionStorage` works similarly only difference is when data inside gets automatically removed for `sessionStorage` it is when browser is closed for `localStorage` it is never.
+
+Note: User can remove these data by himself.
+
+These storages store **key-value pairs** of data and can be used to store user preferences, temporary data, session information. Or they can be used for between tab synchronization.
+
+Data are stored per website origin. For example `https://github.com/` which means that same site accessed through HTTP a HTTPS will have different storages.
+
+Note: Storages may not be available on incognito tabs or automatic removal of data may behave differently.
+
+Example in 11_WebsiteIntegration_Storage folder.
+
 ## Window
 
 Window is global object for web. Window contains **document** for current website (more in 12-DOM.md) and many useful functions for manipulating website and browser itself.
@@ -33,8 +51,6 @@ Window is global object for web. Window contains **document** for current websit
 Windows is specific for current open tab - it is not possible from one to manipulate other, but there are options how to share information from one to another and act upon it.
 
 ### location
-
-### localstorage
 
 ### alert
 
