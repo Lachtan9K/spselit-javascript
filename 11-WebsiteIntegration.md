@@ -52,6 +52,10 @@ Windows is specific for current open tab - it is not possible from one to manipu
 
 ### location
 
+[Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/location)
+
+TODO
+
 ### alert
 
 [Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert)
@@ -81,6 +85,10 @@ Example:
 Note: Prompt can be called without providing it with message as param, but that does not make any sense as user would not know what input it is supposed to provide.
 
 ### fetch
+
+[Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/fetch)
+
+TODO
 
 ### setInterval, setTimeout
 
