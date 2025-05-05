@@ -38,6 +38,32 @@ Windows is specific for current open tab - it is not possible from one to manipu
 
 ### alert
 
+[Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/alert)
+
+Function `alert()` can be used to display popup with message to user which has to be dismissed before using website (browser tab).
+
+Example:
+
+    //script execution
+    window.alert("Notice me senpai!");
+
+Note: Alert can be called without providing it with message as param, but that does not make any sense.
+
+From perspective of UX (user experience) it is wrong to use this alert for non critical problems as it takes control from user and forces them to acknowledge the alert with no way to se it again after closing.
+
+### prompt
+
+[Documentation](https://developer.mozilla.org/en-US/docs/Web/API/Window/prompt)
+
+Function `prompt()` can be used to request input from user. It works similarly to `alert()` function and prevents interaction with website until popup is closed.
+
+Example:
+
+    //script execution
+    window.prompt("Just tell me your name")
+
+Note: Prompt can be called without providing it with message as param, but that does not make any sense as user would not know what input it is supposed to provide.
+
 ### fetch
 
 ### setInterval, setTimeout
